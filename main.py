@@ -84,19 +84,20 @@ def search_details():
 window = tkinter.Tk()
 window.title("Password Manager")
 window.config(padx=50, pady=50)
+window.resizable(0, 0)
 
 canvas = tkinter.Canvas(width=200, height=200)
 photo = tkinter.PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=photo)
 canvas.grid(column=1, row=0)
 
-label1 = tkinter.Label(text="Website:", width=15)
+label1 = tkinter.Label(text="Website:", width=15, font=("Arial", 9, "bold"))
 label1.grid(column=0, row=1)
 
-label2 = tkinter.Label(text="Email/Username:")
+label2 = tkinter.Label(text="Email/Username:", font=("Arial", 9, "bold"))
 label2.grid(column=0, row=2)
 
-label3 = tkinter.Label(text="Password:")
+label3 = tkinter.Label(text="Password:", font=("Arial", 9, "bold"))
 label3.grid(column=0, row=3)
 
 entry1 = tkinter.Entry()
